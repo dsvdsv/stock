@@ -4,7 +4,7 @@ package com.stock
 import com.stock.model.{Account, Buy, Order, Sell}
 import fs2.Pipe
 
-object FileParser {
+object File {
 
   def unsafeParseDirection(s: String) = s match {
     case "s" => Sell

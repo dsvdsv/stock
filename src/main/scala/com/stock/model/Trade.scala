@@ -7,3 +7,8 @@ case class Trade(
   price: Int,
   volume: Int
 )
+
+object Trade {
+  def apply(o: Order) =
+    new Trade(o.clientName, o.direction, o.security, o.price, o.volume)
+}
